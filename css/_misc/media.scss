@@ -1,0 +1,62 @@
+
+@media (max-width: 1200px){
+    .container{
+        width: 900px;
+    }
+}
+
+@media (max-width: 960px){
+    .container{ 
+        width: 750px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{ 
+        width: 600px;
+    }
+    
+}
+
+@media (max-width: 620px){
+    .container{ 
+        width: 320px;
+        font-size: 12px;
+    }
+    
+    .name__left, .name__right{
+        width: 100%;
+        margin: 0 auto;
+        
+        &:after{
+            width: 20px;
+            height: 15px;
+            top: 100px;
+            left: 5px;
+        }
+       
+        & p{
+           padding: 0 10px 0 30px;
+            margin: 0;
+        }
+    }
+    
+    .btn{
+        & p{
+            margin: 0;
+            padding: 0;
+        }
+    }
+    
+    .resume{
+        font-size: 10px;
+        top: -10px;
+    }
+    
+    .images{
+        padding: 0 0 0 10px;
+        margin: 0;
+    }
+    
+}
+

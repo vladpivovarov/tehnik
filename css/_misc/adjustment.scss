@@ -1,0 +1,53 @@
+//adjustmens vars
+
+
+$footer-height: 50px;
+
+
+
+//adjustmens styles
+
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    background: #353535;
+    font-family: 'boycottregular';
+    
+}
+
+:hover{
+    transition: all .5s;
+}
+
+
+.wrapper{
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+    min-width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}

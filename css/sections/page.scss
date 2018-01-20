@@ -1,0 +1,269 @@
+.preloader{
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #1d1f21;
+}
+
+.rocket{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    width: 100px;
+    animation:rocket 2s linear forwards;
+    transform:rotate(-30deg);
+    
+    & img{
+        width: 100%;
+    }
+}
+
+@keyframes rocket{
+    0%{
+        left:0;
+        transform:rotate(-30deg);
+    }
+    
+    
+    40%{
+        top:20%;
+       
+    }
+    45%{
+        top:15%;
+    }
+    50%{
+        top:10%;
+        transform:rotate(40deg);
+    }
+    55%{
+        top:15%;
+    }
+    60%{
+        top:20%;
+        
+    }
+    100%{
+        top:80%;
+        left:80%;
+        transform:rotate(110deg);
+        opacity: 0;
+    }
+}
+
+
+.fon-color{
+    min-height: 100%;
+    background: rgba(#1d1d1d,.6);
+}
+
+.fon-page{
+    background: url(/img/bomba-vzryv-gorod-doroga.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.resume{
+    position: absolute;
+		z-index: 998;
+    top: 0;
+    left: 80%;
+    width: 200px;
+    height: 20px;
+    opacity: .8;
+    cursor:pointer;
+    
+    &:hover{
+        opacity:1;
+    }
+}
+
+.resume-block{
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    width: 200px;
+    font-family: arial;
+    opacity:0;
+    padding: 0 20px 20px 20px;
+    transition: all 1s;
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(#000, .8);
+    border-radius: 15px;
+    text-shadow: none;
+    color:silver;
+    & h4{
+        color: black;
+        opacity:.6;
+         border-bottom: 1px solid silver; 
+    }
+}
+.bomas{
+    transition: all .1s;
+    opacity: 0;
+}
+.bomba{
+    transition: all .1s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999;
+    background: #000;
+    opacity:.7;
+    
+}
+
+.close{
+        display: block;
+        z-index: 99999;
+        position: absolute;
+        top: 15px;
+        left: 85%;
+        width: 20px;
+        height: 20px;
+        background: url(/img/Black_Remove.png);
+        background-size: contain;
+        opacity:.3;
+        cursor:pointer;
+}
+
+.active{
+    z-index: 99999;
+    top:0;
+    opacity: 1;
+    transform: translateY(50px) translateX(-50%);
+}
+
+.name{
+    @extend %clearfix;
+    width: 100%;
+}
+
+.name__left{
+    position: relative;
+    float:left;
+    width: 50%;
+    
+    & p{
+        font-size: 15px; 
+        display: inline-block;
+        font-family: arial;
+        margin-left: 140px;
+        margin-top: 80px;
+        font-style: italic;
+        opacity: .7;
+    } 
+    
+    &:after{
+        content:"";
+        display: block;
+        position: absolute;
+        width: 60px;
+        height: 40px;
+        top: 180px;
+        left: 50px;
+        background: url(/img/Quotation.png);
+        background-size: cover;
+        
+    }
+    
+    & .links{
+        color: silver;
+        border-bottom: 1px solid silver;
+        cursor: pointer;
+    }
+}
+    
+.name__right{
+    float:left;
+    width: 50%;
+    
+    
+    & .img{
+        width: 200px;
+        border-radius: 50%;
+        height: 200px;
+        overflow:hidden;
+        border: 2px solid white;
+        margin-left: 100px;
+        margin-top: 60px;
+    }
+}
+
+.block{
+    background: rgba(#fff,.7);
+    padding:0px 30px 30px 30px;
+    margin-top:100px;
+    @extend %clearfix;
+    overflow: hidden;
+    transition: transform .5s;
+    opacity: 0;
+    transform:translateX(-5000px);
+	  height: 0px;
+    
+}
+
+.show{
+    transform:translateX(0);
+    opacity: 1;
+		height: auto;
+}
+
+.btn p{
+        font-family: arial;
+        opacity: .8;
+        font-size: 14px;
+        padding-left:60px;
+        color:#000;
+        text-shadow: none;
+}
+
+.btn{
+    width: 50%;
+    float:left;
+    
+    & h3{
+        transition: all .5s;
+        color:#000;
+        text-shadow: none;
+    }
+}
+
+span{
+     transition: all .8s;
+}
+h3:hover{
+    & span{
+    display: inline-block;
+    transform : rotate(360deg);
+    }
+}
+
+.images{
+    padding-left: 40px;
+    
+    & img{ 
+        max-height: 100%;
+        padding-left: 30px;
+        transition: all .4s;
+         height: 50px;
+        opacity: .6;
+        &:hover{
+            @include transform(scale(1.2));
+            opacity: .9;
+        }
+    }
+}
+
+    
+    
+    
+    
+    
+
